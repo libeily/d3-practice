@@ -86,8 +86,9 @@
 
 					//Update all rects
 					svg.selectAll("rect")
-					   .data(dataset)
-					   .attr("y", function(d) {
+							.data(dataset)
+
+							.attr("y", function(d) {
 					   		return h - yScale(d);
 					   })
 					   .attr("height", function(d) {
